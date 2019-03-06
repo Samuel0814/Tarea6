@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Resta JAVASCRIPT</title>
+    </head>
+    <body>
+        <h1 id="header">JAVASCRIPT Resta</h1>
+        <h3>Digite dos N&uacutemeros</h3>
+        <label for="">Numero 1:</label>
+        <input type="text" id="num1">
+        <br><br>
+        <label for="">Numero 2:</label>
+        <input type="text" id="num2">
+        <br><br>
+        <input type="button" id="resta_button" value="Resta">
+        <h5 id="footer"></h5>
+    </body>
+    <script>
+        document.getElementById("resta_button").onclick = function() {
+            var n1 = document.getElementById('num1').value;
+            var n2 = document.getElementById('num2').value;
+            var resta = parseInt(n1) - parseInt(n2);
+            document.getElementById("footer").innerHTML = "El resultado es: " + resta;    
+      }
+    </script>
+</html>
